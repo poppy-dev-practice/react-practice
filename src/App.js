@@ -1,23 +1,24 @@
 import logo from './logo.svg';
+import Function from './component/Function'
+import Classcomponent from "./component/Classcomponent"
+import Welcome from './component/Classcomponent';
+import Event from './component/Event';
+import FormHandling from './component/FormHandling';
+import Message from './component/Message';
+import Fh1 from './component/Fh1';
+
 import './App.css';
 
+
 function App() {
+
+  let pop = "pavithran"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+     {/* <FormHandling></FormHandling> */}
+     <Fh1></Fh1>
+    
     </div>
   );
 }
