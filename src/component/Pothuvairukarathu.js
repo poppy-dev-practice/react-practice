@@ -4,7 +4,7 @@ import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
 
 
 
-const WithCounter = (WrappedComponent)=>{
+const WithCounter = (WrappedComponent,incrementnumber)=>{
 
     class WithCounter  extends React.Component{
         constructor(props) {
@@ -17,13 +17,14 @@ const WithCounter = (WrappedComponent)=>{
       
           handchager=()=>{
               this.setState({
-                  count:this.state.count + 1
+                  count:this.state.count + incrementnumber
               })
           }
 
-
+         
         render(){
-            return <WrappedComponent count={this.state.count} handchager={this.handchager} name = "pavithran"></WrappedComponent>
+
+            return <WrappedComponent count={this.state.count} handchager={this.handchager} name = "pavithran" {...this.props}></WrappedComponent>
         }
 
     }

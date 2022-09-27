@@ -9,10 +9,10 @@ export class Hoccounter extends Component {
       <div>
         count {this.props.count} times
         <br></br>
-        <button onClick={this.props.handchager}>{this.props.name} increment</button>
+        <button onClick={this.props.handchager}>{this.props.name} {this.props.names} increment</button>
         </div>
     )
   }
 }
 
-export default  WithCounter(Hoccounter)
+export default  WithCounter(Hoccounter,6)

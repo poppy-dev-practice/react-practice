@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className="App">
-      <Hoccounter></Hoccounter>
-      <Hochover> </Hochover>
+      <Hoccounter names="vigneshwaran"></Hoccounter>
+      <Hochover names="navanandhini"> </Hochover>
     </div>
   );
 }
