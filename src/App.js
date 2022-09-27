@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import Function from './component/Function'
-import Classcomponent from "./component/Classcomponent"
-import Welcome from './component/Classcomponent';
-import Event from './component/Event';
-import FormHandling from './component/FormHandling';
-import Message from './component/Message';
-import Fh1 from './component/Fh1';
-
 import './App.css';
-
+import ComponentC from './component/ComponentC';
+import { UserProvider } from './component/UserContext';
 
 function App() {
 
-  let pop = "pavithran"
   return (
     <div className="App">
+      <UserProvider value=" please god forgive me ">
+      <ComponentC></ComponentC>
+      </UserProvider>
      
-     {/* <FormHandling></FormHandling> */}
-     <Fh1></Fh1>
-    
     </div>
   );
 }
