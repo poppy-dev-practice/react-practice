@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Hoccounter></Hoccounter>
-      <Hochover></Hochover>
+      <Hochover> </Hochover>
     </div>
   );
 }

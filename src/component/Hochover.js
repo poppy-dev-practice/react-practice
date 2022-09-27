@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Updatedcomponent from './Pothuvairukarathu'
+import WithCounter from './Pothuvairukarathu'
 
 export class Hochover extends Component {
 
@@ -15,4 +15,4 @@ export class Hochover extends Component {
   }
 }
 
-export default Updatedcomponent(Hochover) 
+export default WithCounter(Hochover) 

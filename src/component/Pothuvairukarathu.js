@@ -1,8 +1,12 @@
 import React from "react";
 import { findRenderedDOMComponentWithClass } from "react-dom/test-utils";
-const Updatedcomponent = (OriginalComponent)=>{
 
-    class NewComponent extends React.Component{
+
+
+
+const WithCounter = (WrappedComponent)=>{
+
+    class WithCounter  extends React.Component{
         constructor(props) {
             super(props)
           
@@ -19,11 +23,11 @@ const Updatedcomponent = (OriginalComponent)=>{
 
 
         render(){
-            return <OriginalComponent count={this.state.count} handchager={this.handchager} name = "pavithran"></OriginalComponent>
+            return <WrappedComponent count={this.state.count} handchager={this.handchager} name = "pavithran"></WrappedComponent>
         }
 
     }
-    return NewComponent
+    return WithCounter
 }
 
-export default Updatedcomponent
+export default WithCounter

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Updatedcomponent from './Pothuvairukarathu'
+import WithCounter from './Pothuvairukarathu'
 
 export class Hoccounter extends Component {
     
@@ -15,4 +15,4 @@ export class Hoccounter extends Component {
   }
 }
 
-export default  Updatedcomponent(Hoccounter)
+export default  WithCounter(Hoccounter)
