@@ -13,7 +13,7 @@ function App() {
     <div className="App">
      <Rendercounter></Rendercounter>
      <RenderHoover></RenderHoover>
-     <Pothuvarebderpannu name = {()=>"pavithra"}></Pothuvarebderpannu>
+     <Pothuvarebderpannu name = {(isloggesin)=>isloggesin ? "pavithra":"guest"}></Pothuvarebderpannu>
     </div>
   );
 }
