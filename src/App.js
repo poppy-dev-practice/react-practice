@@ -1,15 +1,15 @@
 import './App.css';
 import ComponentC from './component/ComponentC';
+import Hoccounter from './component/Hoccounter';
+import Hochover from './component/Hochover';
 import { UserProvider } from './component/UserContext';
 
 function App() {
 
   return (
     <div className="App">
-      <UserProvider value=" please god forgive me ">
-      <ComponentC></ComponentC>
-      </UserProvider>
-     
+      <Hoccounter></Hoccounter>
+      <Hochover></Hochover>
     </div>
   );
 }
