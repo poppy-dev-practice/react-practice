@@ -13,7 +13,7 @@ function App() {
     <div className="App">
      <Rendercounter></Rendercounter>
      <RenderHoover></RenderHoover>
-     <Pothuvarebderpannu name="pavitharan"></Pothuvarebderpannu>
+     <Pothuvarebderpannu name = {()=>"pavithra"}></Pothuvarebderpannu>
     </div>
   );
 }
