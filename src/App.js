@@ -1,5 +1,6 @@
 import './App.css';
 import ComponentC from './component/ComponentC';
+import Counterrender from './component/Counterrender';
 import Hoccounter from './component/Hoccounter';
 import Hochover from './component/Hochover';
 import Pothuvarebderpannu from './component/Pothuvarebderpannu';
@@ -11,11 +12,16 @@ function App() {
 
   return (
     <div className="App">
-     <Rendercounter></Rendercounter>
-     <RenderHoover></RenderHoover>
-     <Pothuvarebderpannu name = {(isloggesin)=>isloggesin ? "pavithra":"guest"}></Pothuvarebderpannu>
-    </div>
-  );
-}
 
-export default App;
+
+     <Counterrender render={(count,handchager)=>(<RenderHoover count={count} handchager={this.handchager}/>)}/>
+     <Counterrender render={(count,handchager)=>(<Rendercounter count={count} handchager={this.handchager}/>)}/>
+
+
+
+
+    </div>
+
+  )
+
+export default App

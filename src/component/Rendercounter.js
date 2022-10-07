@@ -1,25 +1,13 @@
 import React, { Component } from 'react'
 
 export class Rendercounter extends Component {
-    constructor(props) {
-        super(props)
-      
-        this.state = {
-           count:0
-        }
-      }
-  
-      handchager=()=>{
-          this.setState({
-              count:this.state.count + 1
-          })
-      }
+    
   render() {
     return (
      <div>
-             <div>counter {this.state.count} times</div>
+             <div>counter {this.props.count} times</div>
              
-             <button onClick={this.handchager}>counter</button>
+             <button onClick={this.props.handchager}>counter</button>
      </div>
     )
   }
